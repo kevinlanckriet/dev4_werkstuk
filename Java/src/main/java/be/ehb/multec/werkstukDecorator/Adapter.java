@@ -1,5 +1,7 @@
 package be.ehb.multec.werkstukDecorator;
 
+import be.ehb.multec.werkstukFactory.Car;
+
 public class Adapter implements Target{
     private Adaptee adaptee;
 
@@ -12,8 +14,8 @@ public class Adapter implements Target{
     }
 
     @Override
-    public void targetRequest(Model model) {
-        adaptee.converter(model); //translate request - delegation
+    public void targetRequest(Car car) {
+        adaptee.converter(car); //translate request - delegation
     }
 
 }

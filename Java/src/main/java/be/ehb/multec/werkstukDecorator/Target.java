@@ -1,5 +1,7 @@
 package be.ehb.multec.werkstukDecorator;
 
+import be.ehb.multec.werkstukFactory.Car;
+
 public interface Target {
-    void targetRequest(Model model);
+    void targetRequest(Car car);
 }

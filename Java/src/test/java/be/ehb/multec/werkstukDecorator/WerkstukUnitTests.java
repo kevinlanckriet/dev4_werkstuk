@@ -1,14 +1,54 @@
 package be.ehb.multec.werkstukDecorator;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-public class WerkstukUnitTests {
-    @Test
-    void trimPicker() {
-        Model model = new BaseModel();
-        model = new UpgradeModel1(model);
-        model = new UpgradeModel2(model);
+import static be.ehb.multec.werkstukDecorator.Main.convertOrder;
+import static be.ehb.multec.werkstukDecorator.Main.trimPicker;
+import be.ehb.multec.werkstukFactory.Factory;
+import be.ehb.multec.werkstukFactory.Car;
 
-        System.out.println(model.getDescription());
+public class WerkstukUnitTests {
+
+/*trim codes client side:
+       Base: BA
+       Stage1: BAU1
+       Stage2: BAU1U2
+  trim codes assembly side:
+       Base: A5FG46
+       Stage1: D8T4A6
+       Stage2: G6E8VY
+*/
+
+    @Test
+    void decorateTrim() {
+        Model test = trimPicker(0);
+        Assert.assertEquals("Base car setup",trimPicker(0).getDescription());
+        Assert.assertEquals("BA",trimPicker(0).getIdentifier());
+        System.out.println(test.getIdentifier());
+
     }
+    @Test
+    void name() {
+        Model trimGrade = trimPicker(0);
+        Car suv = Factory.getDetails("suv",trimGrade.getIdentifier());
+        Car sedan = Factory.getDetails("sedan",trimGrade.getIdentifier());
+        Car hatch = Factory.getDetails("hatchback",trimGrade.getIdentifier());
+        System.out.println("Factory configuration for:"+ suv);
+        System.out.println("Factory configuration for:"+ sedan);
+        System.out.println("Factory configuration for:"+ hatch);
+
+    }
+
+    @Test
+    void adaptIdentifier(){
+        Model trim = trimPicker(2);
+        Car suv = Factory.getDetails("suv",trim.getIdentifier());
+        convertOrder(suv);
+        System.out.println("We expect stage 2 code. -> " +suv.getTrim());
+        System.out.println("Assembly line received VIN number:");
+
+    }
+
+
 }

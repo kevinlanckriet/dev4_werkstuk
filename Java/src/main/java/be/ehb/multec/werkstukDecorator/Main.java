@@ -1,5 +1,7 @@
 package be.ehb.multec.werkstukDecorator;
 
+import be.ehb.multec.werkstukFactory.Car;
+
 public class Main {
 
     int trimChoice = 0;
@@ -15,11 +17,10 @@ public class Main {
         //System.out.println(model.getDescription());
     }
 
-    public static void convertOrder(Model model){
-        String VIN;
+    public static void convertOrder(Car car){
         Adaptee adaptee = new Adaptee();
         Target adapter = new Adapter(adaptee);
-        adapter.targetRequest(model);
+        adapter.targetRequest(car);
     }
 
 }
