@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-18T13:31:55" hostname="DESKTOP-MOM165J" time="0.023">
+<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-18T14:39:06" hostname="DESKTOP-MOM165J" time="0.023">
   <properties/>
-  <testcase name="convert()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.02"/>
-  <testcase name="trimTest()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
+  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.021"/>
+  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
   <system-out><![CDATA[We expect stage 2 code. -> BAU1U2
 Converting assembly_request BAU1U2 for assembly line.
 Conversion to assemblySyntax done: G6E8VY
