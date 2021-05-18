@@ -20,12 +20,12 @@ public class WerkstukUnitTests {
 */
 
     @Test
-    void trimTest() {
+    void decorateTrim() {
         Assert.assertEquals("Base car setup",trimPicker(0).getDescription());
     }
 
     @Test
-    void convert() {
+    void adaptIdentifier() {
         Model toBeConvertered = trimPicker(2);
         System.out.println("We expect stage 2 code. -> " +toBeConvertered.getIdentifier());
         convertOrder(toBeConvertered);
