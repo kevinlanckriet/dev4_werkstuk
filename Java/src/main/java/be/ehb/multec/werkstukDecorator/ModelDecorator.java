@@ -6,7 +6,8 @@ public class ModelDecorator extends Model{
         this.model = model;
     }
 
-    protected double cost() {
-        return model.cost();
+    protected int referenceCode() {
+        return model.referenceCode();
     }
+
 }
