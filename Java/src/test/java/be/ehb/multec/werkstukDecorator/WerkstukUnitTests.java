@@ -1,14 +1,35 @@
 package be.ehb.multec.werkstukDecorator;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-public class WerkstukUnitTests {
-    @Test
-    void trimPicker() {
-        Model model = new BaseModel();
-        model = new UpgradeModel1(model);
-        model = new UpgradeModel2(model);
+import static be.ehb.multec.werkstukDecorator.Main.convertOrder;
+import static be.ehb.multec.werkstukDecorator.Main.trimPicker;
 
-        System.out.println(model.getDescription());
+public class WerkstukUnitTests {
+
+/*trim codes client side:
+       Base: BA
+       Stage1: BAU1
+       Stage2: BAU1U2
+
+  trim codes assembly side:
+       Base: A5FG46
+       Stage1: D8T4A6
+       Stage2: G6E8VY
+*/
+
+    @Test
+    void trimTest() {
+        Assert.assertEquals("Base car setup",trimPicker(0).getDescription());
     }
+
+    @Test
+    void convert() {
+        Model toBeConvertered = trimPicker(2);
+        System.out.println("We expect stage 2 code. -> " +toBeConvertered.getIdentifier());
+        convertOrder(toBeConvertered);
+    }
+
+
 }
