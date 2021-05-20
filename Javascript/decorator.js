@@ -14,6 +14,8 @@ const trims = {TrimLevels:[
   console.log(code)
   
   const choise = (int) => {
-      return _.chunk(code, int).join("")};
+    return _.head(_.chunk(code, int+1)).join("")};
   
-  console.log(choise(3))
+  console.log(choise(0))
+  console.log(choise(1))
+  console.log(choise(2)))
