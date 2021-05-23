@@ -29,7 +29,7 @@ public class WerkstukUnitTests {
 
     }
     @Test
-    void name() {
+    void sendTrimThoughFactory() {
         Model trimGrade = trimPicker(0);
         Car suv = Factory.getDetails("suv",trimGrade.getIdentifier());
         Car sedan = Factory.getDetails("sedan",trimGrade.getIdentifier());

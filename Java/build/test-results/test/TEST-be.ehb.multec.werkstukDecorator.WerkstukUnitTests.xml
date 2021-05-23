@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-18T18:56:10" hostname="DESKTOP-MOM165J" time="0.033">
+<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-23T17:29:14" hostname="DESKTOP-MOM165J" time="0.038">
   <properties/>
-  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.025"/>
-  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
-  <testcase name="name()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.001"/>
+  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.028"/>
+  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.007"/>
+  <testcase name="name()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
   <system-out><![CDATA[Converting assembly_request BAU1U2 for assembly line: 1
 Conversion to assemblySyntax done: G6E8VY
-WBAG6E8VYMA637183
+WBAG6E8VYMA425501
 We expect stage 2 code. -> BAU1U2
 Assembly line received VIN number:
 BA
