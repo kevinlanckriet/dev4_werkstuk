@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 #We expect stage 2 code. -> BAU1U2
 7Converting assembly_request BAU1U2 for assembly line.
 +Conversion to assemblySyntax done: G6E8VY
 WBAG6E8VY
+=======
+9Converting assembly_request BAU1U2 for assembly line: 1
++Conversion to assemblySyntax done: G6E8VY
+WBAG6E8VYMA425501
+#We expect stage 2 code. -> BAU1U2
+$Assembly line received VIN number:
+BA
+FFactory configuration for:be.ehb.multec.werkstukFactory.SUV@2c9c8360
+HFactory configuration for:be.ehb.multec.werkstukFactory.SEDAN@73ab4778
+LFactory configuration for:be.ehb.multec.werkstukFactory.HATCHBACK@75077325
+>>>>>>> feature/FACTORY
