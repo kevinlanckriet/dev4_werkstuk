@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-18T14:39:06" hostname="DESKTOP-MOM165J" time="0.023">
+<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-23T17:51:12" hostname="DESKTOP-MOM165J" time="0.036">
   <properties/>
-  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.021"/>
-  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
-  <system-out><![CDATA[We expect stage 2 code. -> BAU1U2
-Converting assembly_request BAU1U2 for assembly line.
-Conversion to assemblySyntax done: G6E8VY
-WBAG6E8VY
-=======
-<testsuite name="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-23T17:29:14" hostname="DESKTOP-MOM165J" time="0.038">
-  <properties/>
-  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.028"/>
-  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.007"/>
-  <testcase name="name()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.002"/>
+  <testcase name="adaptIdentifier()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.027"/>
+  <testcase name="decorateTrim()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.006"/>
+  <testcase name="sendTrimThoughFactory()" classname="be.ehb.multec.werkstukDecorator.WerkstukUnitTests" time="0.001"/>
   <system-out><![CDATA[Converting assembly_request BAU1U2 for assembly line: 1
 Conversion to assemblySyntax done: G6E8VY
-WBAG6E8VYMA425501
+WBAG6E8VYMA269882
 We expect stage 2 code. -> BAU1U2
 Assembly line received VIN number:
 BA
 Factory configuration for:be.ehb.multec.werkstukFactory.SUV@2c9c8360
 Factory configuration for:be.ehb.multec.werkstukFactory.SEDAN@73ab4778
 Factory configuration for:be.ehb.multec.werkstukFactory.HATCHBACK@75077325
->>>>>>> feature/FACTORY
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
